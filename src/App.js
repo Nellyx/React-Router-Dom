@@ -9,6 +9,7 @@ import {
 import Contact from "./pages/Contact";
 import Home from "./pages/Home";
 import About from "./pages/About";
+import Article from "./pages/Article";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
           <Route exact path="/" element={<Home />}></Route>
           <Route exact path="/contact" element={<Contact />}></Route>
           <Route exact path="/about" element={<About />}></Route>
+          <Route exact path="/article/:id" element={<Article />}></Route>
         </Routes>
       </Router>
     </div>
