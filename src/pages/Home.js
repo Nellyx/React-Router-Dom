@@ -30,7 +30,6 @@ function Home() {
             <h1>{article.title}</h1>
             <h2>{article.author}</h2>
             <p>{article.body}</p>
-
             <Link to={`/article/${article.id} `}>Read More..</Link>
           </div>
         ))}
