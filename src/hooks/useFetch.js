@@ -21,7 +21,6 @@ const useFetch = (url) => {
       } catch (error) {
         seterror("There is an error");
         setispending(false);
-
         console.log(error.message);
       }
     };
@@ -29,7 +28,7 @@ const useFetch = (url) => {
     fetchdata();
   }, [url]);
 
-  return { data, ispending };
+  return { data, ispending, error };
 };
 
 export default useFetch;

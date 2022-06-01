@@ -1,11 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import { useParams } from "react-router-dom";
 import useFetch from "../hooks/useFetch";
 
 function Article() {
   const { id } = useParams();
-  const url = " http://localhost:3000/articles" + id;
+  const url = " http://localhost:3000/articles/" + id;
   const { data: articles, ispending, error } = useFetch(url);
 
   return (
@@ -17,16 +17,12 @@ function Article() {
       )}
 
       {error && <div>{error}</div>}
-      {articles && <div>
-        <h2>{articles.title}</h2>
-        <p></p>
-        
-        
-        
-        
-        
-        
-        </div>}
+      {articles && (
+        <div>
+          <h2>{articles.title}</h2>
+          <p>{articles.body}</p>
+        </div>
+      )}
     </div>
   );
 }

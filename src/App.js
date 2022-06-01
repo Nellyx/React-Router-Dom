@@ -29,6 +29,8 @@ function App() {
           <Route exact path="/contact" element={<Contact />}></Route>
           <Route exact path="/about" element={<About />}></Route>
           <Route exact path="/article/:id" element={<Article />}></Route>
+
+          
         </Routes>
       </Router>
     </div>
