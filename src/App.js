@@ -5,6 +5,7 @@ import {
   Routes,
   Route,
   NavLink,
+  Navigate,
 } from "react-router-dom";
 import Contact from "./pages/Contact";
 import Home from "./pages/Home";
@@ -30,7 +31,7 @@ function App() {
           <Route exact path="/about" element={<About />}></Route>
           <Route exact path="/article/:id" element={<Article />}></Route>
 
-          
+          <Route exact path="*" element={<Navigate to="/" />}></Route>
         </Routes>
       </Router>
     </div>

@@ -2,8 +2,8 @@ import React from "react";
 import { useLocation } from "react-router-dom";
 
 function Contact() {
-  const queryString = useLocation().search;
-  console.log(queryString);
+  // const queryString = useLocation().search;
+  // console.log(queryString);
 
   return (
     <div>

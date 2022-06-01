@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import useFetch from "../hooks/useFetch";
 
 function Article() {
